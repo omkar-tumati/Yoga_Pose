@@ -1,0 +1,58 @@
+/* Tutorials.css */
+
+.tutorials-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-family: "Times New Roman", Times, serif; /* Set font family to Times New Roman */
+}
+
+.flash-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flash-card {
+    flex: 1;
+    background-color:  #AFE1AF; /* Light background color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    margin: 10px 15px; /* Adjusted margin for spacing */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Box shadow for pop-up effect */
+    text-align: center; /* Center align content */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.flash-card:hover {
+    transform: translateY(-9px); /* Lift card slightly on hover */
+}
+
+.flash-card h5 {
+    margin-top: 10px;
+    font-family: "Times New Roman", Times, serif; /* Set font family to Times New Roman */
+}
+
+.flash-card p {
+    margin-bottom: 15px;
+}
+
+.tutorial-image {
+    width: 220px; /* Manually set width */
+    height: 150px; /* Manually set height */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.transition-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Times New Roman", Times, serif; /* Set font family to Times New Roman */
+}
+
+.transition-button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,63 @@
+/* Tutorial.css */
+
+.tutorial-container {
+    padding: 20px;
+    overflow: hidden; /* Hide the scrollbar */
+    position: relative; /* Make it relative for absolute positioning of the scroll buttons */
+  }
+  
+  .video-row {
+    margin-bottom: 20px;
+    position: relative; /* Make it relative for absolute positioning of the scroll buttons */
+  }
+  
+  .video-row h2 {
+    margin-bottom: 10px;
+  }
+  
+  .video-container {
+    display: flex;
+    overflow-x: auto; /* Show the scrollbar only when needed */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    padding-bottom: 20px; /* Add some bottom padding to prevent cutoff */
+  }
+  
+  .video {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    background-color: #f0f0f0;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Hide scrollbar */
+  .video-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .scroll-button:hover {
+    background-color: #ccc;
+  }
+  
+  .scroll-button.left {
+    left: 0;
+  }
+  
+  .scroll-button.right {
+    right: 0;
+  }
+  

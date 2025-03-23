@@ -1,0 +1,155 @@
+
+body {
+    margin: 0;
+    padding: 40px;
+    background-color: #0bac66; /* Green background for the whole page */
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .App {
+    font-family: "Times New Roman", Times, serif;
+    color: #0e2d4a;
+    background-color: #ffffff; /* White background for the content */
+    border-radius: 20px; /* Rounded corners for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    margin: 20px; /* Add some margin around the box */
+    padding: 20px; /* Add some padding inside the box */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #AFE1AF; /* Change background color to pisagreen */
+    border-radius: 10px;
+    margin: 20px;
+  
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 95px;
+    height: 85px;
+  }
+  
+  .brand-name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .nav-links li {
+    margin-right: 40px;
+    
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #0e2d4a;
+    font-weight: bold;
+    font-size: 20px; /* Add font size to navbar items */
+  
+  
+  }
+  .nav-links button{
+  
+    background-color: transparent;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+  }
+  
+  .tutorial {
+    background-color: transparent;
+    color: #0e2d4a;
+    border: 1px solid #0e2d4a;
+  }
+  
+  .tutorial:hover {
+    background-color: #0e2d4a;
+    color: #ffffff;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 50px; }
+  
+  .left-half {
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 52px;
+    color: #0e2d4a;
+  }
+  
+  .quote {
+    font-size: 25px;
+    color: #0e2d4a;
+  }
+  
+  .buttons {
+    margin-top: 40px; /* Increase margin-top to move the buttons down */
+  }
+  
+  button {
+    padding: 15px 30px; /* Increase padding to make the buttons bigger */
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    cursor: pointer;
+    font-size: 17px; /* Increase font size */
+  }
+  
+  /* Add margin to the left of the second button */
+  .tutorial {
+    margin-left: 60px; /* Adjust margin as needed */
+  }
+  .explore {
+    background-color: #0bac66;
+    color: #ffffff;
+    margin-right: 10px; 
+  }
+  
+  .pose-containers {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .pose-container {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  
+  
+  .right-half {
+    width: 50%;
+  }
+  
+  .right-half img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .green-text {
+    color: #0bac66;
+  }
+  
+  

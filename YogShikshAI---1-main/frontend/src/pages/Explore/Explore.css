@@ -1,0 +1,77 @@
+/* Explore.css */
+
+.explore-container {
+    padding: 20px;
+    position: relative;
+  }
+  
+  .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px; /* Add space between flash cards */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Add animation */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Add hover effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8); /* Add shadow effect */
+  }
+  
+  .card-content {
+    padding: 20px;
+    margin-right: 40%; /* Adjust margin to accommodate image */
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+    color: #333; /* Default color */
+    transition: color 0.2s ease-in-out; /* Add color transition */
+  }
+  
+  .card:hover h2 {
+    color: #007bff; /* Change color on hover */
+  }
+  
+  .card p {
+    margin-bottom: 20px;
+  }
+  
+  .article-image {
+    width: 30%; /* Set width to 40% of the original image size */
+    height: auto;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+  }
+  
+  .pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .page-link {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .page-link:hover {
+    color: #007bff;
+  }
+  

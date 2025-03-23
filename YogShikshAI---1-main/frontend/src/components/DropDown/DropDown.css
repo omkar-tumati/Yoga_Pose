@@ -1,0 +1,103 @@
+#pose-dropdown-btn {
+    width: 300px;
+    background-color: white;
+    color: #0e2d4a;
+    border: 1px solid #0e2d4a; /* Add border to the button */
+}
+
+#pose-dropdown-btn:hover {
+    background-color: #0e2d4a;
+    border-color: white;
+    color: white;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative; /* Position the container relative to its parent */
+}
+
+.dropdown-content {
+    position: absolute; /* Position the dropdown content */
+    top: calc(100% + 5px); /* Position it below the button */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #0e2d4a; /* Add border around the dropdown content */
+    border-radius: 5px;
+    z-index: 1; /* Ensure it's above other content */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    display: none; /* Hide the dropdown content by default */
+}
+
+.dropdown-container:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+.dropdown-content-item {
+    border-bottom: 1px solid #ccc; /* Add border between content items */
+    padding: 10px; /* Add padding to content items */
+}
+
+.dropdown-content-item:last-child {
+    border-bottom: none; /* Remove border from last content item */
+}
+
+#pose-dropdown-btn:focus {
+    background-color: white;
+    color: black;
+    box-shadow: none;
+    border-color: #0e2d4a;
+}
+
+#pose-dropdown-btn:focus-within {
+    border-color: #0e2d4a;
+}
+
+.dropdown-custom-menu {
+    overflow-y: auto;
+    max-height: 200px; /* Set maximum height for the dropdown menu */
+    scrollbar-width: thin;
+    -ms-overflow-style: none;
+}
+
+.dropdown-custom-menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dropdown-custom-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.dropdown-custom-menu::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.dropdown-item-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    gap: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-item-container:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-item-1 {
+    margin: 0;
+}
+
+.dropdown-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}

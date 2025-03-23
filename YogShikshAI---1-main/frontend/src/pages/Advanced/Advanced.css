@@ -1,0 +1,43 @@
+/* Beginner.css */
+
+.course-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .flex-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .flex-item {
+    text-align: center;
+    position: relative; 
+    text-decoration: none;
+  }
+  
+  .flex-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+  }
+  
+  .link-text {
+    display: block;
+    margin-top: 10px;
+    color: #0e2d4a; /* Blue color */
+    text-decoration: none;
+  }
+  
+  
+  .flex-item:hover {
+    transform: translateY(-5px); /* Move up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    border-radius: 10px;
+  }
+  
