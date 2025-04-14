@@ -6,23 +6,44 @@ import { poseImages } from '../../utils/pose_images'
 
 import './Instructions.css'
 
-export default function Instructions({ currentPose }) {
+// export default function Instructions({ currentPose }) {
 
-    const [instructions, setInsntructions] = useState(poseInstructions)
+//     const [instructions, setInsntructions] = useState(poseInstructions)
+
+//     return (
+//         <div className="instructions-container">
+//             <ul className="instructions-list">
+//                 {instructions[currentPose].map((instruction) => {
+//                     return(
+//                         <li className="instruction">{instruction}</li>
+//                     )
+                    
+//                 })}
+//             </ul>
+//             <img 
+//                 className="pose-demo-img"
+//                 src={poseImages[currentPose]}
+//             />
+//         </div>
+//     )
+// }
+
+export default function Instructions({ currentPose }) {
+    const [instructions, setInstructions] = useState(poseInstructions)
 
     return (
         <div className="instructions-container">
             <ul className="instructions-list">
-                {instructions[currentPose].map((instruction) => {
+                {instructions[currentPose] && instructions[currentPose].map((instruction, index) => {
                     return(
-                        <li className="instruction">{instruction}</li>
+                        <li key={index} className="instruction">{instruction}</li>
                     )
-                    
                 })}
             </ul>
             <img 
                 className="pose-demo-img"
                 src={poseImages[currentPose]}
+                alt={currentPose}
             />
         </div>
     )
