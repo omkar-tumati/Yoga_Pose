@@ -1,78 +1,111 @@
 .yoga-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: white;
     min-width: 80vw;
     min-height: 90vh;
-}
-
-.secondary-btn {
     position: relative;
-    left: 45%;
-    top: 20px; /* Move the button down by 100 pixels */
-    padding: 10px 20px;
+  }
+  
+  .performance-container {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 30px;
+    position: absolute;
+    left: 150px;
+    padding: 20px;
+  }
+  
+  .pose-performance {
+    background-color: white;
+    padding: 10px 15px;
     border-radius: 5px;
-    border: 5px solid rgba(125, 125, 125, 0.1);
-    background-color: grey; /* Change button color to grey */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
-    color: white;
-}
-
-.secondary-btn:hover {
-    background-color: rgba(0, 0, 0,0.4);
-}
-
-.starting-contdown {
-    margin: auto;
-    border: 10px solid rgba(125, 125, 125, 0.5);
-    width: max-content;
-    padding: 10px 30px;
-    border-radius: 50%;
-    background-color: rgba(255,255,255,0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px 10px;
+  }
+  
+  .pose-performance h4 {
+    color: rgba(0,0,0,0.7);
+  }
+  
+  .yoga-pose-area {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+  }
+  
+  .webcam-container {
     position: relative;
-    top: 45%;
-}
-.starting-contdown h1 {
-    color: white;
-}
-.pose-img {
+    width: 640px;
+    height: 480px;
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .pose-img {
     position: absolute;
     right: 120px;
     top: 80px;
-    width: 0px;
+    width: 150px;
     aspect-ratio: 1;
-}
-
-.performance-container {
-    display: flex;
-    padding: 20px;
+    border: 2px solid #2e7d32;
+    border-radius: 5px;
+  }
+  
+  .secondary-btn {
+    background-color: grey;
+    color: white;
+    border: 5px solid rgba(125, 125, 125, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     position: absolute;
-    left: 150px;
-}
-
-
-.pose-performance {
-    margin: 10px 10px;
-    background-color: white;
-    border-radius: 8px;
-    padding: 10px;
-}
-.pose-performance h4 {
-    color: rgba(0,0,0,0.7);
-}
-
-#webcam {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .secondary-btn:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  #webcam {
     transform: rotateY(180deg) translateY(200px);
-}
-
-
-#my-canvas {
+  }
+  
+  #my-canvas {
     transform: rotateY(180deg) translateY(200px);
-}
-
-.pose-selection-grid {
+  }
+  
+  /* New styles for category-based layout */
+  .pose-categories-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .pose-category {
+    margin-bottom: 40px;
+  }
+  
+  .category-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+    color: #333;
+  }
+  
+  .pose-selection-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
-    padding: 20px;
   }
   
   .pose-selection-item {
@@ -84,17 +117,66 @@
     border-radius: 10px;
     padding: 10px;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
   }
   
   .pose-selection-item:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border-color: #4a90e2;
+  }
+  
+  .pose-selection-item.beginner {
+    border-color: #4caf50;
+  }
+  
+  .pose-selection-item.intermediate {
+    border-color: #2196f3;
+  }
+  
+  .pose-selection-item.advanced {
+    border-color: #f44336;
+  }
+  
+  .pose-selection-item:hover.beginner {
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  }
+  
+  .pose-selection-item:hover.intermediate {
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+  }
+  
+  .pose-selection-item:hover.advanced {
+    box-shadow: 0 4px 12px rgba(244, 67, 54, 0.3);
+  }
+  
+  .difficulty-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+  }
+  
+  .difficulty-badge.beginner {
+    background-color: #4caf50;
+  }
+  
+  .difficulty-badge.intermediate {
+    background-color: #2196f3;
+  }
+  
+  .difficulty-badge.advanced {
+    background-color: #f44336;
   }
   
   .pose-selection-image {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -103,4 +185,22 @@
   .pose-selection-label {
     font-weight: bold;
     text-align: center;
+    margin-top: 8px;
+    color: #333;
+  }
+  
+  .pose-name-display {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 10;
   }

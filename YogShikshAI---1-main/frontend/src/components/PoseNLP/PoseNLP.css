@@ -1,0 +1,92 @@
+.pose-nlp-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    max-height: 480px;
+    overflow-y: auto;
+  }
+  
+  .pose-nlp-container h3 {
+    color: #3f51b5;
+    margin-top: 0;
+    border-bottom: 2px solid #3f51b5;
+    padding-bottom: 8px;
+  }
+  
+  .pose-nlp-container h4 {
+    margin: 10px 0 5px;
+    color: #424242;
+  }
+  
+  .feedback-container {
+    margin-bottom: 15px;
+  }
+  
+  .primary-feedback {
+    font-size: 16px;
+    color: #4a90e2;
+    font-weight: 500;
+  }
+  
+  .corrections {
+    margin-top: 10px;
+  }
+  
+  .corrections ul {
+    padding-left: 20px;
+    margin: 5px 0;
+  }
+  
+  .corrections li {
+    color: #e53935;
+    margin-bottom: 5px;
+  }
+  
+  .instructions-container ol {
+    padding-left: 20px;
+    margin: 5px 0;
+  }
+  
+  .instructions-container li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  
+  /* Add animation for feedback highlight */
+  @keyframes highlight {
+    0% { background-color: rgba(233, 30, 99, 0.1); }
+    50% { background-color: rgba(233, 30, 99, 0.2); }
+    100% { background-color: rgba(233, 30, 99, 0.1); }
+  }
+  
+  .corrections li {
+    animation: highlight 2s infinite;
+    padding: 3px 5px;
+    border-radius: 3px;
+  }
+  
+  /* Enhance visibility of primary feedback */
+  .primary-feedback {
+    background-color: rgba(74, 144, 226, 0.1);
+    padding:.5px;
+    border-radius: 5px;
+    display: block;
+  }
+  
+  /* Make scrollbar more subtle */
+  .pose-nlp-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .pose-nlp-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+  }
+  
+  .pose-nlp-container::-webkit-scrollbar-thumb {
+    background: #3f51b5;
+    border-radius: 3px;
+  }
