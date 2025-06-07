@@ -1,4 +1,4 @@
-.pose-nlp-container {
+/* .pose-nlp-container {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 15px;
@@ -55,7 +55,6 @@
     line-height: 1.4;
   }
   
-  /* Add animation for feedback highlight */
   @keyframes highlight {
     0% { background-color: rgba(233, 30, 99, 0.1); }
     50% { background-color: rgba(233, 30, 99, 0.2); }
@@ -68,7 +67,6 @@
     border-radius: 3px;
   }
   
-  /* Enhance visibility of primary feedback */
   .primary-feedback {
     background-color: rgba(74, 144, 226, 0.1);
     padding:.5px;
@@ -76,7 +74,6 @@
     display: block;
   }
   
-  /* Make scrollbar more subtle */
   .pose-nlp-container::-webkit-scrollbar {
     width: 6px;
   }
@@ -89,4 +86,82 @@
   .pose-nlp-container::-webkit-scrollbar-thumb {
     background: #3f51b5;
     border-radius: 3px;
-  }
+  } */
+
+
+
+  .pose-nlp-container {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 20px;
+  max-width: 600px;
+}
+
+.pose-nlp-container h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.feedback-container {
+  margin-bottom: 20px;
+}
+
+.primary-feedback {
+  font-size: 1.1em;
+  color: #2c5282;
+  margin: 10px 0;
+  white-space: pre-line;
+}
+
+.corrections {
+  background: #fff5f5;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.corrections h4 {
+  color: #c53030;
+  margin-bottom: 10px;
+}
+
+.corrections ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.corrections li {
+  color: #744210;
+  padding: 5px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.corrections li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #c53030;
+}
+
+.instructions-container {
+  background: #f7fafc;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.instructions-container h4 {
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+
+.instructions-container ol {
+  padding-left: 20px;
+}
+
+.instructions-container li {
+  color: #4a5568;
+  padding: 5px 0;
+}
